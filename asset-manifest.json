@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fueddingiu/static/css/main.dafe6eb6.css",
+    "main.js": "/fueddingiu/static/js/main.f3bda9bf.js",
+    "static/js/787.e9d5826c.chunk.js": "/fueddingiu/static/js/787.e9d5826c.chunk.js",
+    "index.html": "/fueddingiu/index.html",
+    "main.dafe6eb6.css.map": "/fueddingiu/static/css/main.dafe6eb6.css.map",
+    "main.f3bda9bf.js.map": "/fueddingiu/static/js/main.f3bda9bf.js.map",
+    "787.e9d5826c.chunk.js.map": "/fueddingiu/static/js/787.e9d5826c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dafe6eb6.css",
+    "static/js/main.f3bda9bf.js"
+  ]
+}
