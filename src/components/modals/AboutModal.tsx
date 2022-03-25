@@ -61,7 +61,7 @@ export const AboutModal = ({ isOpen, isDev, handleClose }: Props) => {
 
                   <div className="mt-4 text-left text-sm">
                     <p>
-                      <b>Parolette</b> è un progetto open source, il codice sorgente è disponibile{" "}
+                      <b>Fueddingiu</b> è un progetto open source basato su <b>Parolette</b>, il codice sorgente è disponibile{" "}
                       <a
                         href="https://github.com/gianmarcoaddari/fueddingiu"
                         className="underline focus:outline-dotted font-bold"

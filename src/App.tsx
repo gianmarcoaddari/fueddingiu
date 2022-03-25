@@ -147,7 +147,7 @@ function App() {
 
       <div className="flex w-full max-w-sm mx-auto items-center">
         <div className="grow">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide">Parolette</h1>
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide">Fueddingiu</h1>
           <h2 className="text-xs tracking-wide">
           <span className="mr-1">n. {solutionMeta.index}</span>
           • una al giorno, collezionale tutte</h2>
