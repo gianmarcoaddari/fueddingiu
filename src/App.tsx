@@ -186,6 +186,7 @@ function App() {
         isOpen={isWinModalOpen}
         handleClose={() => setIsWinModalOpen(false)}
         guesses={guesses}
+        solution={solution}
         todayTS={todayTS}
         title={endTitle}
       />

@@ -3,7 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { CheckIcon, XIcon } from "@heroicons/react/outline";
 import { MiniGrid } from "../mini-grid/MiniGrid";
 import { Fireworks } from "../Fx/Fireworks";
-import { NextCountdown } from "../elements/NextCuntdown";
+import { NextCountdown } from "../elements/NextCountdown";
 import { ShareButton } from "../elements/ShareButton";
 import { onCountdownEnd } from '../../lib/fx';
 
@@ -13,9 +13,10 @@ type Props = {
   guesses: string[];
   todayTS: number;
   title: string;
+  solution: string;
 };
 
-export const WinModal = ({ isOpen, handleClose, guesses, todayTS, title }: Props) => {
+export const WinModal = ({ isOpen, handleClose, guesses, todayTS, title, solution }: Props) => {
   let closeButtonRef = useRef(null);
 
   return (
@@ -83,7 +84,7 @@ export const WinModal = ({ isOpen, handleClose, guesses, todayTS, title }: Props
               </div>
 
               <div className="mt-3 sm:mt-6 px-1">
-                <NextCountdown todayTS={todayTS} onEnd={onCountdownEnd} />
+                <NextCountdown todayTS={todayTS} onEnd={onCountdownEnd} solution={solution}/>
               </div>
 
               <div className="mt-6 sm:mt-6">

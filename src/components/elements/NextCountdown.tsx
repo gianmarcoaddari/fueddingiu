@@ -4,10 +4,11 @@ import { useState } from 'react';
 
 type Props = {
   todayTS: number;
+  solution?: string;
   onEnd?: any;
 };
 
-export const NextCountdown = ({ todayTS, onEnd }: Props) => {
+export const NextCountdown = ({ todayTS, onEnd, solution }: Props) => {
   const [midnight] = useState<number>(new Date(todayTS).setHours(24, 0, 0, 0));
 
   const onTick = () => {
@@ -58,9 +59,11 @@ export const NextCountdown = ({ todayTS, onEnd }: Props) => {
       return (
         <div className='flex flex-col items-center'>
           <p className="test-xs uppercase">
-            <a href="http://ditzionariu.sardegnacultura.it/faeddu/porcu">
+            {solution &&
+              <a href={"http://ditzionariu.sardegnacultura.it/faeddu/"+solution?.toLowerCase()}>
               Incalcà innoi po biri su ditzionariu!
             </a>
+            }
           </p>
           <p className="text-xs uppercase">
             Prossima paroletta

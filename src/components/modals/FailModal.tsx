@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
 import { MiniGrid } from "../mini-grid/MiniGrid";
-import { NextCountdown } from "../elements/NextCuntdown";
+import { NextCountdown } from "../elements/NextCountdown";
 import { ShareButton } from "../elements/ShareButton";
 
 type Props = {
