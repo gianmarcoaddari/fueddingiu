@@ -204,7 +204,7 @@ function App() {
 
       <div className="max-w-sm mx-auto text-center mt-5 sm:mt-6 md:mt-8 text-gray-500 dark:text-gray-300 cursor-pointer" onClick={() => setIsAboutModalOpen(true)}>
         <p className="text-xs">
-          2022 MIT lic. • v 0.8 • @xho
+          2022 MIT lic. • v 0.1
           <InformationCircleIcon className="inline-block ml-1 h-4 w-4 -mt-0.5"/>
         </p>
       </div>
