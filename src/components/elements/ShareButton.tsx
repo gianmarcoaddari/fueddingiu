@@ -42,7 +42,7 @@ export const ShareButton = ({ guesses, title, success }: Props) => {
       navigator.share({
         title: 'Parolette',
         text,
-        url: 'https://parolette.netlify.app/',
+        url: 'https://gianmarcoaddari.github.io/fueddingiu/',
       })
       .then(() => console.log('Successful share'))
       .catch((error:any) => console.log('Error sharing', error));

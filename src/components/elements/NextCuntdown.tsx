@@ -57,6 +57,11 @@ export const NextCountdown = ({ todayTS, onEnd }: Props) => {
       // Render a countdown
       return (
         <div className='flex flex-col items-center'>
+          <p className="test-xs uppercase">
+            <a href="http://ditzionariu.sardegnacultura.it/faeddu/porcu">
+              Incalcà innoi po biri su ditzionariu!
+            </a>
+          </p>
           <p className="text-xs uppercase">
             Prossima paroletta
           </p>

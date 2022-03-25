@@ -56,65 +56,21 @@ export const AboutModal = ({ isOpen, isDev, handleClose }: Props) => {
                   {isDev && <div className="bg-fuchsia-800 p-2 rounded text-white my-8">
                       Attenzione: questo è un indirizzo di test.
                       L'indirizzo giusto è<br/>
-                      <a href="https://parolette.netlify.app" className="font-bold">parolette.netlify.app</a>
+                      <a href="https://gianmarcoaddari.github.io/fueddingiu/" className="font-bold">gianmarcoaddari.github.io/fueddingiu</a>
                     </div>}
 
                   <div className="mt-4 text-left text-sm">
                     <p>
                       <b>Parolette</b> è un progetto open source, il codice sorgente è disponibile{" "}
                       <a
-                        href="https://github.com/xho/wordle"
+                        href="https://github.com/gianmarcoaddari/fueddingiu"
                         className="underline focus:outline-dotted font-bold"
                         target="_blank"
                         rel="noreferrer"
                       >
                         su github
                       </a>.{" "}
-                      <br className="sm:hidden" />
-                      Per il popolo da {" "}
-                      <a
-                        href="https://twitter.com/xho"
-                        className="underline focus:outline-none font-bold"
-                        target="_blank"
-                        rel="noreferrer"
-                      >@xho</a>.
                     </p>
-                  </div>
-
-                  <div className="mt-8 mb-1 text-left text-xs md:text-sm">
-                    <p className="font-extrabold">Fastidiose domandine ricorrenti</p>
-
-                    <ul className="mt-3 list-decimal list-inside">
-                      <li>
-                        <span className="font-bold">Perché solo sostantivi al singolare e verbi all'infinito? Non mi piace.</span>
-                        <p className="mt-1">È stata una scelta motivata da alcune considerazioni di carattere linguistico e sulla complessità del gioco, e che non potrei riassumere in queste poche righe. Se non sei d'accordo, vedi il punto 3.</p>
-                      </li>
-                      <li className="mt-3">
-                        <span className="font-bold">Va bene, ma mancano delle parole nel dizionario.</span>
-                        <p className="mt-1">Puoi creare una PR o aprire una issue su Github al link sopra riportato. Altrimenti puoi segnalarmelo <a
-                        href="https://twitter.com/xho"
-                        className="underline focus:outline-none font-bold"
-                        target="_blank"
-                        rel="noreferrer"
-                      >su Twitter</a>.</p>
-                      </li>
-                      <li className="mt-3">
-                        <span className="font-bold">Non ci sono le statistiche e mancano altre cose, è fatto male…</span>
-                        <p className="mt-1">Per il valore-lavoro immateriale necessario alla creazione e pubblicazione di questo simpatico giochino non mi viene corrisposto un salario, solo un po' di gioia che deriva dal condividere, mentre per te è tutto gratuito. Quindi questo è, ma puoi fare qualcosa come è spiegato al punto 4.</p>
-                      </li>
-                      <li className="mt-3">
-                        <span className="font-bold">Si può fare meglio.</span>
-                        <p className="mt-1">Non vi è dubbio. Il codice sorgente è aperto e puoi clonare il progetto e farne uno secondo i tuoi gusti. Se non sai farlo, vedi il punto 5.</p>
-                      </li>
-                      <li className="mt-3">
-                        <span className="font-bold">Non sono capace a farlo da solo!</span>
-                        <p className="mt-1">Mi spiace. Puoi forse ricorrere a qualche amico, oppure cercare aiuto in rete. Se non puoi farlo, vai al punto 6.</p>
-                      </li>
-                      <li className="mt-3">
-                        <span className="font-bold">Questo non mi piace, nessuno può farlo come lo desidero…</span>
-                        <p className="mt-1">Attaccati al cazzo. 🖖</p>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
