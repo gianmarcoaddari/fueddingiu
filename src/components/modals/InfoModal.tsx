@@ -65,21 +65,21 @@ export const InfoModal = ({ isOpen, dictionarySize, handleClose }: Props) => {
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="F" status="correct" />
-                      <Cell value="R" />
+                      <Cell value="P" status="correct" />
+                      <Cell value="U" />
+                      <Cell value="D" />
+                      <Cell value="D" />
                       <Cell value="A" />
-                      <Cell value="T" />
-                      <Cell value="E" />
                     </div>
                     <p className="text-sm">
                       La lettera <b>F</b> è contenuta nella parola ed è nella posizione corretta
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="L" />
-                      <Cell value="I" />
-                      <Cell value="S" status="present" />
-                      <Cell value="T" />
+                      <Cell value="G" />
+                      <Cell value="E" status="present" />
+                      <Cell value="N" />
+                      <Cell value="N" />
                       <Cell value="A" />
                     </div>
                     <p className="text-sm">
@@ -87,11 +87,11 @@ export const InfoModal = ({ isOpen, dictionarySize, handleClose }: Props) => {
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="S" />
+                      <Cell value="M" />
+                      <Cell value="A" status="absent" />
+                      <Cell value="N" />
+                      <Cell value="N" />
                       <Cell value="U" />
-                      <Cell value="O" />
-                      <Cell value="L" status="absent" />
-                      <Cell value="A" />
                     </div>
                     <p className="text-sm ">
                       La lettera <b>L</b> non è contenuta nella parola

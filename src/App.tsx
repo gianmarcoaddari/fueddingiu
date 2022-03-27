@@ -5,6 +5,7 @@ import { AboutModal } from "./components/modals/AboutModal";
 import { InfoModal } from "./components/modals/InfoModal";
 import { WinModal } from "./components/modals/WinModal";
 import { FailModal } from "./components/modals/FailModal";
+import { EfisModal} from "./components/modals/EfisModal";
 import { isWordInWordList, isWinningWord, solution, dictionarySize } from "./lib/words";
 import { failMessage, winMessage } from "./lib/endmessages";
 import { shake } from './lib/fx';
@@ -26,6 +27,7 @@ function App() {
   const [todayTS] = useState(new Date().setHours(0,0,0,0));
   const [endTitle, setEndTitle] = useState('');
   const [isDev, setIsDev] = useState(false);
+  const [isEfis, setIsEfis] = useState(false);
 
   const isEnded = useCallback(() => {
     if (isGameWon) {
@@ -60,6 +62,11 @@ function App() {
 
   const onEnter = useCallback(() => {
     if (isEnded()) {
+      return;
+    }
+
+    if (currentGuess.toUpperCase() === 'EFISI') {
+      setIsEfis(true);
       return;
     }
 
@@ -201,6 +208,11 @@ function App() {
         isOpen={isAboutModalOpen}
         handleClose={() => setIsAboutModalOpen(false)}
         isDev={isDev}
+      />
+
+      <EfisModal
+        isOpen={isEfis}
+        handleClose={() => setIsEfis(false)}
       />
 
       <div className="max-w-sm mx-auto text-center mt-5 sm:mt-6 md:mt-8 text-gray-500 dark:text-gray-300 cursor-pointer" onClick={() => setIsAboutModalOpen(true)}>
