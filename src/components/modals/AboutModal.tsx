@@ -61,8 +61,10 @@ export const AboutModal = ({ isOpen, isDev, handleClose }: Props) => {
 
                   <div className="mt-4 text-left text-sm">
                     <p>
-                      <b>Fueddìngiu</b> est su matessi de <a href="https://www.powerlanguage.co.uk/wordle/">Wordle</a> ma in lìngua sarda.
-                      Su còdixi est pigau de <a href="https://parolette.netlify.app/">Parolette</a> e si podit agatai{" "}
+                      <b>Fueddìngiu</b> est su matessi de <a href="https://www.powerlanguage.co.uk/wordle/" 
+                        className="underline focus:outline-dotted font-bold">Wordle</a> ma in lìngua sarda.
+                      Su còdixi est pigau de <a href="https://parolette.netlify.app/" 
+                        className="underline focus:outline-dotted font-bold">Parolette</a> e si podit agatai{" "}
                       <a
                         href="https://github.com/gianmarcoaddari/fueddingiu"
                         className="underline focus:outline-dotted font-bold"
