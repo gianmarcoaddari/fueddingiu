@@ -70,8 +70,8 @@ function App() {
       setTimeout(() => {
         toast(
           <div>
-            <p className="text-xl text-center font-bold tracking-wide m-0">NIX</p>
-            <p className="text-center tracking-wide">sostantivi al singolare o verbi all'infinito</p>
+            <p className="text-xl text-center font-bold tracking-wide m-0">NUDDA</p>
+            <p className="text-center tracking-wide">Cussu fueddu no s'agatat in su ditzionariu!</p>
           </div>
         )
       }, 250);

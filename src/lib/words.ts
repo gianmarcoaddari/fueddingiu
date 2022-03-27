@@ -2,7 +2,7 @@ import { WORDS } from "../constants/dictionary";
 import { SOLUTIONS } from "../constants/solutions";
 
 const getTodayIndex = () => {
-  const epochMs = 1648231406000; // init January 12, 2022 CET
+  const epochMs = 1648162800000; // init March 25th, 2022 CET
   const now = Date.now();
   const msInDay = 86400000;
   return Math.floor((now - epochMs) / msInDay);
