@@ -43,14 +43,14 @@ export const NextCountdown = ({ todayTS, onEnd, solution }: Props) => {
       return (
         <div className='flex flex-col items-center'>
           <p className="text-xs uppercase mb-2">
-            Ora c'è una nuova paroletta
+            Ddoi at unu fueddìngiu nou
           </p>
           <button
             onClick={reload}
             className="inline-flex justify-center items-center rounded-md border border-transparent shadow-sm px-4 py-2 text-base font-medium focus:outline-none sm:text-sm text-gray-200 border-gray-300 bg-black hover:border-blue-600 hover:text-blue-400 focus:ring-blue-500 focus:ring-2 focus:ring-offset-2"
           >
             <RefreshIcon className="h-5 w-5 mr-2" />
-            Ricarica
+            Torra a carrigai
           </button>
         </div>
       );
@@ -61,12 +61,12 @@ export const NextCountdown = ({ todayTS, onEnd, solution }: Props) => {
           <p className="test-xs uppercase">
             {solution &&
               <a href={"http://ditzionariu.sardegnacultura.it/faeddu/"+solution?.toLowerCase()}>
-              Incalcà innoi po biri su ditzionariu!
+              Carca innoi po biri su ditzionàriu!
             </a>
             }
           </p>
           <p className="text-xs uppercase">
-            Prossima paroletta
+            Fueddìngiu chi benit
           </p>
           <div className='text-4xl'>
             <span>{zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}</span>

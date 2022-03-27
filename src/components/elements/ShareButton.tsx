@@ -15,7 +15,7 @@ export const ShareButton = ({ guesses, title, success }: Props) => {
   const [isTextCopied, setIsTextCopied] = useState(false);
 
   const shareText = () => {
-    let text = `Fueddingiu ${solutionMeta.index} ` + (success? guesses.length : 'x') + '/6';
+    let text = `Fueddìngiu ${solutionMeta.index} ` + (success? guesses.length : 'x') + '/6';
     text += `\n${solutionMeta.date}\n`;
     text += `http://shorturl.at/cnyA9\n`
     text += `${title}\n\n`;
@@ -32,7 +32,7 @@ export const ShareButton = ({ guesses, title, success }: Props) => {
     return text;
   };
 
-  const shareButtonText = isMobile? 'Condividi' : 'Copia per condividere';
+  const shareButtonText = isMobile? 'Cumbida' : 'Còpia po cumbidai';
 
   const onShare = () => {
     let text = shareText();
@@ -41,7 +41,7 @@ export const ShareButton = ({ guesses, title, success }: Props) => {
     navigator = window.navigator;
     if (isMobile && navigator.share) {
       navigator.share({
-        title: 'Fueddingiu',
+        title: 'Fueddìngiu',
         text,
         url: 'https://gianmarcoaddari.github.io/fueddingiu/',
       })

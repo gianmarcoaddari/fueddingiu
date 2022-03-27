@@ -88,7 +88,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses, attemptRevealed }
       </div>
       <div className="flex justify-center">
         <Key width={65.4} value="ENTER" onClick={onClick}>
-          INVIO
+          BAI
         </Key>
         <Key value="Z" onClick={onClick} status={charStatuses["Z"]} />
         <Key value="X" onClick={onClick} status={charStatuses["X"]} />

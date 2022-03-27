@@ -19,7 +19,7 @@ function App() {
   const [currentGuess, setCurrentGuess] = useState("");
   const [isGameWon, setIsGameWon] = useState(false);
   const [isGameLost, setIsGameLost] = useState(false);
-  const [attemptRevealed, setAttemptRevelead] = useState(true);
+  const [attemptRevealed, setAttemptRevealed] = useState(true);
   const [isFailModalOpen, setIsFailModalOpen] = useState(false);
   const [isWinModalOpen, setIsWinModalOpen] = useState(false);
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
@@ -72,13 +72,13 @@ function App() {
 
     if (!isWordInWordList(currentGuess) && guesses.length < 6) {
       toast.dismiss();
-      setAttemptRevelead(true);
+      setAttemptRevealed(true);
       shake(document.querySelector('#main'), 300); // shake on error
       setTimeout(() => {
         toast(
           <div>
             <p className="text-xl text-center font-bold tracking-wide m-0">NUDDA</p>
-            <p className="text-center tracking-wide">Cussu fueddu no s'agatat in su ditzionariu!</p>
+            <p className="text-center tracking-wide">Cussu fueddu no s'agatat in su ditzionàriu!</p>
           </div>
         )
       }, 250);
@@ -86,7 +86,7 @@ function App() {
       return;
     }
 
-    setAttemptRevelead(false);
+    setAttemptRevealed(false);
     const winningWord = isWinningWord(currentGuess);
 
     if (currentGuess.length === 5 && guesses.length < 6 && !isEnded()) {
@@ -131,7 +131,7 @@ function App() {
     once("revealEnd", (e: any) => {
       e.stopImmediatePropagation();
       setCurrentGuess("");
-      setAttemptRevelead(true);
+      setAttemptRevealed(true);
     });
   });
 
@@ -154,10 +154,10 @@ function App() {
 
       <div className="flex w-full max-w-sm mx-auto items-center">
         <div className="grow">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide">Fueddingiu</h1>
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-wide">Fueddìngiu</h1>
           <h2 className="text-xs tracking-wide">
           <span className="mr-1">n. {solutionMeta.index}</span>
-          • una al giorno, collezionale tutte</h2>
+          • unu fueddu po diri</h2>
         </div>
 
         <PuzzleIcon

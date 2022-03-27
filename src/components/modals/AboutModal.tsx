@@ -50,7 +50,7 @@ export const AboutModal = ({ isOpen, isDev, handleClose }: Props) => {
                     as="h3"
                     className="text-xl leading-6 font-medium"
                   >
-                    Informazioni
+                    Scedas
                   </Dialog.Title>
 
                   {isDev && <div className="bg-fuchsia-800 p-2 rounded text-white my-8">
@@ -61,14 +61,15 @@ export const AboutModal = ({ isOpen, isDev, handleClose }: Props) => {
 
                   <div className="mt-4 text-left text-sm">
                     <p>
-                      <b>Fueddingiu</b> è un progetto open source basato su <b>Parolette</b>, il codice sorgente è disponibile{" "}
+                      <b>Fueddìngiu</b> est su matessi de <a href="https://www.powerlanguage.co.uk/wordle/">Wordle</a> ma in lìngua sarda.
+                      Su còdixi est pigau de <a href="https://parolette.netlify.app/">Parolette</a> e si podit agatai{" "}
                       <a
                         href="https://github.com/gianmarcoaddari/fueddingiu"
                         className="underline focus:outline-dotted font-bold"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        su github
+                        in github
                       </a>.{" "}
                     </p>
                   </div>

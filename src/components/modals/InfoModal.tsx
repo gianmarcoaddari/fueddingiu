@@ -57,11 +57,11 @@ export const InfoModal = ({ isOpen, dictionarySize, handleClose }: Props) => {
                     as="h3"
                     className="text-xl leading-6 font-medium"
                   >
-                    Come giocare
+                    Is règulas
                   </Dialog.Title>
                   <div className="mt-4 text-gray-500 dark:text-gray-400">
                     <p className="text-sm dark:text-gray-100">
-                      Indovina la <b>paroletta</b> in sei tentativi. Per ogni tentativo riceverai indizi dal colore delle caselle.
+                      Intzerta su <b>fueddìngiu</b> in sesi tentas o prus pagu. Po dònnia tenta as a arriciri inditus de su colori de is lìteras.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -72,7 +72,7 @@ export const InfoModal = ({ isOpen, dictionarySize, handleClose }: Props) => {
                       <Cell value="A" />
                     </div>
                     <p className="text-sm">
-                      La lettera <b>F</b> è contenuta nella parola ed è nella posizione corretta
+                      Sa lìtera <b>P</b> est in su fueddu e in su logu giustu puru.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -83,7 +83,7 @@ export const InfoModal = ({ isOpen, dictionarySize, handleClose }: Props) => {
                       <Cell value="A" />
                     </div>
                     <p className="text-sm">
-                      La lettera <b>S</b> è contenuta nella parola ma è nella posizione sbagliata
+                      Sa lìtera <b>E</b> est in su fueddu ma in su logu sballiau.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -94,16 +94,17 @@ export const InfoModal = ({ isOpen, dictionarySize, handleClose }: Props) => {
                       <Cell value="U" />
                     </div>
                     <p className="text-sm ">
-                      La lettera <b>L</b> non è contenuta nella parola
+                      Sa lìtera <b>A</b> no nc'est in su fueddu.
                     </p>
 
                     <p className="text-sm mt-5 dark:text-gray-100">
-                      N.B.: nell'adattamento in italiano il dizionario è volutamente limitato, e contiene sostantivi al singolare e verbi all'infinito.
-                      <br />Ora è composto da {dictionarySize} elementi.
+
+                      Po imoi, in s'aconciadura in sardu is fueddus, po sceberu, funt in campidanesu.
+                      <br />Su ditzionàriu tenit {dictionarySize} fueddus.
                     </p>
                     <p className="text-sm">
                     • <br/>
-                      La <b>paroletta</b> segreta è la stessa per un intero giorno, poi da mezzanotte ce n'è una nuova.
+                      Su <b>fueddìngiu</b> cuadu est su pròpiu po totu sa diri, apustis de mesu noti ddoi at unu fueddìngiu nou.
                     </p>
                   </div>
                 </div>
