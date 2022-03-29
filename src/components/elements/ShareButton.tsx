@@ -71,7 +71,7 @@ export const ShareButton = ({ guesses, title, success }: Props) => {
       )}
       onClick={onShare}>
       {!isTextCopied && <ShareIcon className="h-5 w-5 mr-2" />}
-      {isTextCopied? 'RISULTATO COPIATO' : shareButtonText}
+      {isTextCopied? 'RESULTAU COPIAU' : shareButtonText}
     </button>
   );
 };

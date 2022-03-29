@@ -78,7 +78,7 @@ function App() {
         toast(
           <div>
             <p className="text-xl text-center font-bold tracking-wide m-0">NUDDA</p>
-            <p className="text-center tracking-wide">Cussu fueddu no s'agatat in su ditzionàriu!</p>
+            <p className="text-center tracking-wide">Custu fueddu no s'agatat in su ditzionàriu!</p>
           </div>
         )
       }, 250);
@@ -217,7 +217,7 @@ function App() {
 
       <div className="max-w-sm mx-auto text-center mt-5 sm:mt-6 md:mt-8 text-gray-500 dark:text-gray-300 cursor-pointer" onClick={() => setIsAboutModalOpen(true)}>
         <p className="text-xs">
-          2022 MIT lic. • v 0.1
+          2022 MIT lic. • Gianmarco e Diletta • v 0.1
           <InformationCircleIcon className="inline-block ml-1 h-4 w-4 -mt-0.5"/>
         </p>
       </div>
